@@ -1,0 +1,56 @@
+@font-face {
+  font-family: 'my-icon';
+  src:  url('../fonts/my-icon.eot?c79pg7');
+  src:  url('../fonts/my-icon.eot?c79pg7#iefix') format('embedded-opentype'),
+    url('../fonts/my-icon.ttf?c79pg7') format('truetype'),
+    url('../fonts/my-icon.woff?c79pg7') format('woff'),
+    url('../fonts/my-icon.svg?c79pg7#my-icon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'my-icon' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-shopping_cart:before {
+  content: "\e93a";
+}
+.icon-favorite:before {
+  content: "\e9da";
+}
+.icon-thumb_up:before {
+  content: "\e9e4";
+}
+.icon-thumb_down:before {
+  content: "\e9e6";
+}
+.icon-add_circle:before {
+  content: "\ea0a";
+}
+.icon-remove_circle_outline:before {
+  content: "\ea0b";
+}
+.icon-close:before {
+  content: "\ea0f";
+}
+.icon-keyboard_arrow_right:before {
+  content: "\ea3c";
+}
+.icon-arrow_lift:before {
+  content: "\ea50";
+}
+.icon-check_circle:before {
+  content: "\ea54";
+}
