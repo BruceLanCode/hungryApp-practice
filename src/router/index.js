@@ -1,34 +1,34 @@
 import Vue from 'vue'
 import Router from 'vue-router'
-import goods from '../components/goods/goods.vue'
-import ratings from '../components/ratings/ratings.vue'
-import seller from '../components/seller/seller.vue'
 
 Vue.use(Router)
 
-export default new Router({
-	linkActiveClass:'active',
-	mode:'history',
-  routes: [
-    {
-      path: '/',
-      name: 'goods',
-      component: goods
-    },
-    {
-    	path: '/goods',
-    	name: 'goods',
-    	component: goods
-    },
-    {
-      path: '/ratings',
-      name: 'ratings',
-      component: ratings
-    },
-    {
-      path: '/seller',
-      name: 'seller',
-      component: seller
-    }
-  ]
-})
+export function createRouter() {
+  return new Router({
+    linkActiveClass:'active',
+    mode:'history',
+    routes: [
+      {
+        path: '/',
+        name: 'goods',
+        component: () => import('../components/goods/goods.vue')
+      },
+      {
+        path: '/goods',
+        name: 'goods',
+        component: () => import('../components/goods/goods.vue')
+      },
+      {
+        path: '/ratings',
+        name: 'ratings',
+        component: () => import('../components/ratings/ratings.vue')
+      },
+      {
+        path: '/seller',
+        name: 'seller',
+        component: () => import('../components/seller/seller.vue')
+      }
+    ]
+  })
+}
+
