@@ -9,7 +9,7 @@ if (process.env.NODE_ENV === 'development') {
   baseConfig = devConfig
 }
 module.exports = merge(baseConfig, {
-  entry: '../src/entry-server.js',
+  entry: './src/entry-server.js',
   target: 'node',
   devtool: 'source-map',
   output: {
